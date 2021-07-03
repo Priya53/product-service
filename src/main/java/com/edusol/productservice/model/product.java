@@ -45,10 +45,18 @@ public class product {
 	public void setCategary(String categary) {
 		this.categary = categary;
 	}
-	@Override
+	/*@Override
 	public String toString() {
 		return "product [id=" + id + ", name=" + name + ", price=" + price + ", categary=" + categary + "]";
 	}
+
+	public product(int id, String name, float price, String categary) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.price = price;
+		this.categary = categary;
+	}*/
 	
 	
 	

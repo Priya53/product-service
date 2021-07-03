@@ -22,7 +22,7 @@ public class ProductService {
 		return productRepository.findAll();
 	}
 	public Object addProduct(product product) {
-		logger.info(product.toString());
+		logger.info("product = ",product.toString());
 	 productRepository.save(product);
 	 logger.info("Product added successfully");
 		return new ResponseEntity<>("Product added successfully",HttpStatus.CREATED);

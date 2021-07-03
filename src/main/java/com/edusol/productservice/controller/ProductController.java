@@ -37,6 +37,8 @@ public class ProductController {
 	}
 	@PostMapping("/add-product")
 	public Object addProduct(@RequestBody product product) {
+		
+		logger.info(product.toString());
 		return productService.addProduct(product);
 	}
 	
@@ -61,6 +63,7 @@ public class ProductController {
 	}
 	@DeleteMapping("/delete-product")
 	public Object deleteProduct(@RequestParam int id) {
+		logger.info("Product Id:" +id);
 		return productService.deleteProduct(id);
 	}
 }
